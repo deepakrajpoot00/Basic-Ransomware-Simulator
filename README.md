@@ -1,11 +1,11 @@
-# ransomware-example
+# Ransomware Simulator
 
 A simple demonstration tool to simulate a ransomware attack locally
 
 ## ⚠️ Disclaimer ⚠️
 
 This software is made just for demonstration and study purposes.
-If you want to run it locally for tests, take care of what directories you decide to encrypt. The software is distributed in MIT license.
+If you want to run it locally for tests, take care of what directories you decide to encrypt.
 Its use is free, however the author doesn't take responsibility for any illegal use of the code by 3rd parties.
 
 ## Setup
@@ -13,7 +13,7 @@ Its use is free, however the author doesn't take responsibility for any illegal 
 To setup the tool just run
 
 ```bash
-go install github.com/marmos91/ransomware@latest
+go install github.com/deepakrajpoot00/Basic-Ransomware-Simulator@latest
 ```
 
 ### Setup locally
@@ -29,17 +29,6 @@ go run main.go
 In order to demonstrate the way ransomware works quickly and in a protected environment, **it is very useful to be able to restrict its operation within a directory**.
 This way the process takes much less time (the entire operating system does not need to be encrypted).
 Writing this tool in Go, also **allows the tool to be developed even in a non-Windows environment** (by far the most supported operating system by ransomware available online)
-
-## Demo
-
-This project was used to showcase the resilience of [Cubbit](https://www.cubbit.io)'s object storage to this type of attack, demonstrating how it is possible to defend against such a tool using.
-Cubbit's features ([versioning](https://docs.cubbit.io/guides/bucket-and-object-versioning), [object locking](https://docs.cubbit.io/guides/object-lock)).
-
-The whole thing is available in a video demo that can be found [here](https://www.youtube.com/watch?v=w4vfng17eYg).
-
-[![Watch the video](https://markdown-videos.vercel.app/youtube/w4vfng17eYg)](https://youtu.be/w4vfng17eYg)
-
-The restore tool used in the demo is available [here](https://github.com/marmos91/s3restore).
 
 ## How to use it
 
@@ -61,7 +50,7 @@ VERSION:
    v1.0.0
 
 AUTHOR:
-   Marco Moschettini <marco.moschettini@cubbit.io>
+   Deepak Rajpoot
 
 COMMANDS:
    create-keys, c  Generates a new random keypair and saves it to a file
